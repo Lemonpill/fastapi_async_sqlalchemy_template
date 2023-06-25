@@ -10,6 +10,7 @@ fastapi = {extras = ["all"], version = "*"}
 email-validator = "*"
 shortuuid = "*"
 passlib = {extras = ["bcrypt"], version = "*"}
+alembic = "*"
 
 [dev-packages]
 

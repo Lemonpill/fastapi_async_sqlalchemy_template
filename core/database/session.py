@@ -2,8 +2,10 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.ext.asyncio import create_async_engine
 from sqlalchemy.orm import sessionmaker
 
+from core.database.config import settings
+
 engine = create_async_engine(
-    "postgresql+asyncpg://postgres:0585805055@localhost:5432/fastapi-receipt-backend",
+    settings.SQLALCHEMY_URL
     # echo=True,
 )
 
